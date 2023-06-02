@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import {React} from "react";
 import { Button } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
-import Footer from "../components/Web/Web-BookingPage/footer";
+import Footer from "../components/footer";
 
 
 function HomePage() {
