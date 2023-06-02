@@ -3,6 +3,8 @@ import { useMediaQuery } from 'react-responsive';
 import {React} from "react";
 import { Button } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Web/Web-BookingPage/footer";
+
 
 function HomePage() {
     const isDesktopOrMobile = useMediaQuery({ query: '(max-width:768px)' });
@@ -45,6 +47,7 @@ function HomePage() {
                         <Button variant="outlined" onClick={navigateToPurchase} style={{ margin: '5px' }}>도착 예약하기</Button>
                         <Button variant="outlined" style={{ margin: '5px' }}>예약 확인하기</Button>
                     </ContentContainer>
+                    <Footer></Footer>
                 </div>
             ) : (
                 <div>
@@ -56,6 +59,7 @@ function HomePage() {
                             <Button variant="outlined" style={{ margin: '2px' }}>예약 확인하기</Button>
               
                     </ContentContainer>
+                    <Footer></Footer>
                 </div>
             )}
         </HomePageComponent>
